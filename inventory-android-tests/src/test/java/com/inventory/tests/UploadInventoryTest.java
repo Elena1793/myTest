@@ -86,6 +86,7 @@ public class UploadInventoryTest extends TestBase {
         app.fillDocumentNameField();
         app.hideKeyboard();
         app.attachPhotoToTheDocumentSectionFromGallery();
+        Thread.sleep(2000);
         app.clickOnTheAddDocumentButton();
         app.fillDocumentNameField();
         app.hideKeyboard();

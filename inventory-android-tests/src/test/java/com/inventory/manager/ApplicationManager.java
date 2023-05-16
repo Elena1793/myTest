@@ -154,11 +154,11 @@ public class ApplicationManager {
         dynamicElement.click();
        // click(By.id("org.codeaurora.snapcam:id/shutter_button"));
     }
-    public void savePhoto_afterTakePhoto_byCamera(){
+  /*  public void savePhoto_afterTakePhoto_byCamera(){
       //  By.xpath("")
-        /*WebElement dynamicElement = (new WebDriverWait(driver, 100))
+        *//*WebElement dynamicElement = (new WebDriverWait(driver, 100))
                 .until(ExpectedConditions.elementToBeClickable(By.id("org.codeaurora.snapcam:id/done_button")));
-        dynamicElement.click();*/
+        dynamicElement.click();*//*
         WebElement dynamicElement = (new WebDriverWait(driver, 100))
                 .until(ExpectedConditions.elementToBeClickable(By.id("//*[contains(@resource-id,'done_button')]")));
         dynamicElement.click();
@@ -172,8 +172,19 @@ public class ApplicationManager {
 
 
        // click(By.id("org.codeaurora.snapcam:id/done_button"));
-    }
+    }*/
+    public void savePhoto_afterTakePhoto_byCamera () {
 
+        WebElement dynamicElement = (new WebDriverWait(driver, 100))
+                .until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(@resource-id,'done_button')]")));
+        dynamicElement.click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        // click(By.id("org.codeaurora.snapcam:id/done_button"));
+    }
 
     public void clickOnGalleryButton()
     {
