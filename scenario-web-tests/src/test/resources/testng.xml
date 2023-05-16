@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="InventoryRegressionTests" verbose="1" >
+    <test name="Inventory" >
+        <classes>
+            <class name="com.web.CreatePTSInvHandlingProcess" />
+            <class name="com.web.CreateJobTest" />
+            <class name="com.web.CreateRoadwayInvHandlingProcess" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="InventoryRegressionTests" verbose="1" >
+    <test name="Inventory" >
+        <classes>
+            <class name="com.inventory.tests.CreateInventoryTest" />
+            <class name="com.inventory.tests.DownloadInventoryTest" />
+            <class name="com.inventory.tests.UploadInventoryTest" />
+            <class name="com.inventory.tests.SignAndSendTest" />
+            <class name="com.inventory.tests.CheckInventoryTest" />
+            <class name="com.inventory.tests.UserRegistrationTest" />
+            <class name="com.inventory.environments.Core" />
+            <class name="com.inventory.environments.Dev" />
+            <class name="com.inventory.environments.Prod" />
+            <class name="com.inventory.tests.OpenAppTest" />
+        </classes>
+    </test>
+</suite>
